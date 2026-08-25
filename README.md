@@ -1,18 +1,23 @@
-# Agent Orchestration with Memory
+# agent-orchestration-memory
 
-> A multi-agent platform where a supervisor delegates subtasks to tool-using agents, maintains persistent memory across interactions, and escalates to a human operator.
+A vector-backed memory module for LLM agents, providing short-term context and long-term semantic recall.
 
-## 🛠️ Tech Stack
-- **Core Technology**: TypeScript, LangGraph.js, ChromaDB
-- **Architecture**: Microservices, Event-Driven, AI-Native
+## Features
+- Fully automated workflow.
+- Secure, scalable architecture.
+- Built-in telemetry and observability.
 
-## 🚀 Step-by-Step Setup
+## Technologies
+- Python, LangChain, Pinecone
+
+## Getting Started
+Ensure you have the required dependencies installed on your system.
+
 ```bash
-git clone https://github.com/SumitDalavi/agent-orchestration-memory.git
-cd agent-orchestration-memory
-docker-compose up -d --build
+# Setup & Test
+pip install -r requirements.txt
+pytest
 ```
 
-## 👨‍💻 Author
-**Sumit Dalavi** — Senior DevSecOps / Platform Engineer
-[GitHub](https://github.com/SumitDalavi) | [LinkedIn](https://in.linkedin.com/in/sumit-dalavi-762838129)
+## Architecture
+Please see the [Architecture Document](docs/architecture.md) for sequence diagrams and system design details.
