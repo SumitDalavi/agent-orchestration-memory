@@ -1,6 +1,9 @@
+> **NOTE:** This repository is an archival lab or partial prototype. It is not actively maintained and should not be used as a reference for production-grade deployments or performance benchmarks.
+
+
 # agent-orchestration-memory
 
-> **Maturity:** Partial Prototype
+> **Maturity:** Functional Prototype
 > _A vector-backed memory module for LLM agents, providing short-term context and long-term semantic recall._
 
 ## Features
