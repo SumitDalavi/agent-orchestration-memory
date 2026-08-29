@@ -1,6 +1,7 @@
 # agent-orchestration-memory
 
-A vector-backed memory module for LLM agents, providing short-term context and long-term semantic recall.
+> **Maturity:** Partial Prototype
+> _A vector-backed memory module for LLM agents, providing short-term context and long-term semantic recall._
 
 ## Features
 - Fully automated workflow.
@@ -28,3 +29,20 @@ Please see the [Architecture Document](docs/architecture.md) for sequence diagra
 - **CI Pipeline Remediation:** Successfully resolved all CI/CD pipeline failures and established baseline CI workflows.
 - **Specific Fix:** Added and configured robust GitHub Actions workflows for automated testing, linting, and formatting.
 - **Status:** 🟩 Passing
+
+---
+
+## Mock Boundaries (Honest Scope)
+
+| What | Status | Details |
+|---|---|---|
+| Vector Store | **Real** | Uses local hnswlib/pgvector instead of Pinecone for testing. |
+| Memory Management | **Real** | Implements short-term windowing and long-term retrieval. |
+| Embeddings API | **Mocked** | Uses dummy static embeddings during tests to avoid OpenAI API costs. |
+
+## 📚 Documentation
+
+- [Architecture](docs/ARCHITECTURE.md) — System diagram and component details
+- [Runbook](docs/runbook.md) — Setup, commands, and expected outputs
+- [Decisions](docs/decisions.md) — ADRs for memory forgetting
+- [Changelog](docs/changelog.md) — Change history

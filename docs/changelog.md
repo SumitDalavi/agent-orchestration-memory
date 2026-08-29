@@ -1,0 +1,7 @@
+# Changelog
+
+## [2026-08-29] — Phase 2 Evidence
+### Added
+- Created `tests/e2e/test_memory_forget.sh` to prove cascading deletion for GDPR compliance.
+- Standardized documentation (`runbook.md`, `decisions.md`, `ARCHITECTURE.md`).
+- Added maturity badge and mock boundaries to `README.md`.
