@@ -1,5 +1,3 @@
-> **NOTE:** This repository is an archival lab or partial prototype. It is not actively maintained and should not be used as a reference for production-grade deployments or performance benchmarks.
-
 # agent-orchestration-memory
 
 [![CI Pipeline](https://github.com/SumitDalavi/agent-orchestration-memory/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/SumitDalavi/agent-orchestration-memory/actions/workflows/ci.yml)
@@ -34,13 +32,6 @@ pytest
 ## Architecture
 Please see the [Architecture Document](docs/architecture.md) for sequence diagrams and system design details.
 
-## CI & Reliability Updates (August 2026)
-
-- **CI Pipeline Remediation:** Successfully resolved all CI/CD pipeline failures and established baseline CI workflows.
-- **Specific Fix:** Added and configured robust GitHub Actions workflows for automated testing, linting, and formatting.
-- **Status:** 🟩 Passing
-
----
 
 ## Mock Boundaries (Honest Scope)
 
@@ -96,19 +87,13 @@ Each release automatically:
 ### Verifying the Release
 ```bash
 # Verify release via GitHub CLI
-gh release view v0.1.0 --repo SumitDalavi/agent-orchestration-memory
+gh release view v0.2.0 --repo SumitDalavi/agent-orchestration-memory
 
 # Download and inspect SBOM
-gh release download v0.1.0 --repo SumitDalavi/agent-orchestration-memory --pattern "sbom.spdx.json"
+gh release download v0.2.0 --repo SumitDalavi/agent-orchestration-memory --pattern "sbom.spdx.json"
 cat sbom.spdx.json | jq .
 ```
 
-## Documentation
-
-- [Architecture](docs/ARCHITECTURE.md)
-- [Runbook](docs/runbook.md)
-- [Decisions](docs/decisions.md)
-- [Changelog](docs/changelog.md)
 
 ### NPM Package Installation
 ```bash
