@@ -1,7 +1,16 @@
 {
-  "name": "agent-orchestration-memory",
+  "name": "@sumitdalavi/agent-orchestration-memory",
   "version": "0.2.0",
+  "description": "Long-term semantic memory and context management SDK for AI agents.",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumitDalavi/agent-orchestration-memory.git"
+  },
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
